@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-900 text-white font-sans;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-md transition-all duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center border border-emerald-500 text-emerald-500 px-6 py-2 rounded-md hover:bg-emerald-500 hover:text-white transition-all duration-200;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold text-white mb-8 text-center;
+  }
+}
